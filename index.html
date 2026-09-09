@@ -3,38 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — {{APP_NAME}}</title>
-<!--
-████████████████████████████████████████████████████████████████████████████████████████
-  FILL-OUT CHECKLIST (read before editing; delete this comment block when done)
-
-  Gather these facts first (from the developer / Play Console / App Store Connect /
-  the app's actual code + SDK list). Then replace every {{TOKEN}} below. Every token
-  is listed here — search the page for "{{" afterwards to make sure none are left.
-
-  1. {{APP_NAME}}              → the app's display name
-  2. {{APP_DESCRIPTION}}       → one plain sentence describing what the app does
-  3. {{DEVELOPER_ENTITY}}      → legal entity name, or "the individual developer" if solo
-  4. {{DEVELOPER_ADDRESS}}     → legal/business address, or delete the line if none
-  5. {{CONTACT_EMAIL}}         → real, monitored email (store-reviewers check this works)
-  6. {{EFFECTIVE_DATE}}        → date the policy takes effect, e.g. September 9, 2026
-  7. {{LAST_UPDATED_DATE}}     → date of this version (same as above on first publish)
-  8. {{AUTO_DATA_DETAILS}}     → list of device/usage data actually collected automatically
-  9. {{ACCOUNT_FIELDS}}        → exact fields the signup/account form asks for (if any)
- 10. {{PAYMENT_PROCESSOR_LIST}}→ payment processors actually used (only if you sell things)
- 11. {{THIRD_PARTY_SDK_TABLE}} → rows for EVERY third-party SDK the app embeds (Section 5)
-
-  CONDITIONAL SECTIONS — keep only the ones that match the app, DELETE the rest:
-  · Section 1.4 (device permissions/location)     — keep if app requests any such permission
-  · Section 6 (advertising)                       — keep if ads are shown
-  · Section 14 (account deletion)                 — keep if the app supports account creation
-    (Apple REQUIRES an in-app account-deletion option if accounts exist — see instructions)
-
-  CONSISTENCY RULE: everything here must match what you answer in Google Play's
-  "Data safety" form and Apple's "App Privacy" labels. If the policy says you don't
-  collect X but the store form says you do, the app gets rejected.
-████████████████████████████████████████████████████████████████████████████████████████
--->
+<title>Privacy Policy — Classic Garage</title>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -73,33 +42,36 @@
 
 <header class="policy-header">
   <h1>Privacy Policy</h1>
-  <p class="meta"><strong>Last updated:</strong> {{LAST_UPDATED_DATE}} &nbsp;·&nbsp; <strong>Effective:</strong> {{EFFECTIVE_DATE}}</p>
+  <p class="meta"><strong>Last updated:</strong> September 9, 2026 &nbsp;·&nbsp; <strong>Effective:</strong> September 9, 2026</p>
 </header>
 
-<p>{{DEVELOPER_ENTITY}} (&#8220;we,&#8221; &#8220;us,&#8221; or &#8220;our&#8221;) operates the mobile application {{APP_NAME}} (the &#8220;App&#8221;). {{APP_DESCRIPTION}} This Privacy Policy explains what information the App collects, why we collect it, how it is used and shared, and the choices you have. By downloading or using the App, you agree to the practices described in this policy.</p>
+<p>The individual developer (&#8220;we,&#8221; &#8220;us,&#8221; or &#8220;our&#8221;) operates the mobile application Classic Garage (the &#8220;App&#8221;). Classic Garage is a local maintenance log for cars: you keep a garage of vehicles, service history, receipts, and related photos on your device. This Privacy Policy explains what information the App collects, why we collect it, how it is used and shared, and the choices you have. By downloading or using the App, you agree to the practices described in this policy.</p>
 
 <h2>1. Information We Collect</h2>
 
 <h3>1.1 Information You Provide to Us</h3>
 <ul>
-  <li><strong>Account information.</strong> If you create an account, we collect the information you provide during registration, including {{ACCOUNT_FIELDS}}. If you do not create an account, this does not apply to you.</li>
-  <li><strong>Purchases and subscriptions.</strong> If you make a purchase or subscribe through the App, the transaction is processed by the app store or payment processor you used ({{PAYMENT_PROCESSOR_LIST}}). We do not collect or store full payment card numbers, and we never see your card details.</li>
+  <li><strong>Garage records.</strong> Year, make, model, VIN, mileage, engine, service dates, descriptions, costs, part numbers, notes, and photos you attach of cars or receipts. This information is stored in a database on your device. The App works without an account.</li>
+  <li><strong>VIN decode.</strong> If you enter or scan a VIN, that VIN is sent to the U.S. National Highway Traffic Safety Administration (NHTSA) vPIC API so the App can fill year, make, and model.</li>
+  <li><strong>Account information.</strong> If you create an account, we collect the information you provide during registration, including an email address and password if you sign up with email, or the name and email address that Apple or Google share with us if you use Sign in with Apple or Google. If you do not create an account, this does not apply to you.</li>
+  <li><strong>Optional cloud backup.</strong> If you sign in and use cloud sync, copies of car and service <em>text</em> may be stored in Firebase (Google Cloud). Photos are intended to stay on your device unless a photo upload succeeds; failed photo uploads remain local.</li>
+  <li><strong>Purchases and subscriptions.</strong> If you make a purchase or subscribe through the App, the transaction is processed by the app store or payment processor you used (Apple App Store, via RevenueCat). We do not collect or store full payment card numbers, and we never see your card details. We receive whether your Lifetime or Monthly unlock is active.</li>
   <li><strong>Communications.</strong> If you contact us for support, we collect your email address and the contents of your message so we can respond.</li>
 </ul>
 
 <h3>1.2 Information We Collect Automatically</h3>
-<p>When you use the App, we may automatically collect certain technical and usage information, including {{AUTO_DATA_DETAILS}}. This information helps us operate, secure, and improve the App and is generally aggregated or pseudonymized.</p>
+<p>When you use the App, we do not run a separate analytics or crash-reporting product of our own. The services listed in Section 5 may automatically receive technical information needed to operate those services, including device type, operating system, app version, and authentication or purchase events. We do not collect advertising identifiers for advertising. This information helps operate, secure, and provide the App and is processed by those providers under their own policies.</p>
 
 <h3>1.3 Information from Third-Party Services</h3>
 <p>If you choose to sign in using a third-party service (such as Apple, Google, or another provider), we receive only the basic profile information that service makes available to us and that you authorize, such as your name and email address.</p>
 
-<!-- KEEP THIS SECTION ONLY IF THE APP REQUESTS SENSITIVE PERMISSIONS (location, camera, microphone, photos, contacts, health, etc.). DELETE IT ENTIRELY IF THE APP DOES NOT. -->
 <h3>1.4 Device Permissions and Sensitive Information</h3>
 <p>The App requests the following device permissions and uses the associated information only for the purpose stated:</p>
 <ul>
-  <li>{{PERMISSION_1_PURPOSE}} — we access this only when you {{PERMISSION_1_TRIGGER}}; replace this bullet with one bullet per permission the app actually requests (location, camera, photos, microphone, contacts, notifications, etc.), stating exactly when and why it is used.</li>
+  <li><strong>Camera.</strong> We access the camera only when you choose to photograph a car or receipt, or to scan a VIN barcode on a dash or door sticker.</li>
+  <li><strong>Photo library.</strong> We access your photo library only when you choose a car photo or receipt from existing pictures.</li>
 </ul>
-<p>We do not collect information that directly identifies you from these permissions beyond what is needed to provide the feature you asked for.</p>
+<p>The App does not request microphone, location, contacts, or notification permission. We do not collect information that directly identifies you from these permissions beyond what is needed to provide the feature you asked for.</p>
 
 <h2>2. How We Use Your Information</h2>
 <p>We use the information we collect to:</p>
@@ -126,23 +98,23 @@
 <p>The App may use local storage, identifiers, and similar technologies to remember your preferences, keep you signed in, and support analytics and advertising partners&#8217; features. These work like cookies on a website. You can reset your device advertising identifier or limit ad tracking through your device settings: on iOS, enable &#8220;Ask App Not to Track&#8221; under Settings &gt; Privacy &gt; Tracking; on Android, enable &#8220;Opt out of Ads Personalization&#8221; under Settings &gt; Privacy.</p>
 
 <h2>5. Third-Party Services and SDKs</h2>
-<p>The App integrates third-party services (software development kits, or SDKs) that may collect information under their own privacy policies. Replace this paragraph and the table below with the SDKs the App actually embeds — check the codebase and any dependency list. For each one, list its name, purpose, and a link to its privacy policy.</p>
+<p>The App integrates third-party services (software development kits, or SDKs) that may collect information under their own privacy policies:</p>
 <table>
   <thead>
     <tr><th>Service</th><th>What it does</th><th>Privacy policy</th></tr>
   </thead>
   <tbody>
-    {{THIRD_PARTY_SDK_TABLE}}
-    <!-- Example row (delete or replace with real rows):
-    <tr><td>Google Analytics for Firebase</td><td>Usage analytics and crash reporting</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
-    -->
+    <tr><td>Firebase Authentication</td><td>Optional email, Apple, and Google sign-in</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Cloud Firestore</td><td>Optional cloud copies of car and service text after you sign in</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Cloud Storage for Firebase</td><td>Optional photo upload if you sync and the upload succeeds</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Sign in with Apple</td><td>Optional Apple account sign-in</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+    <tr><td>Google Sign-In</td><td>Optional Google account sign-in</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+    <tr><td>RevenueCat</td><td>In-app purchases and subscription status (Lifetime and Monthly)</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+    <tr><td>Apple App Store / StoreKit</td><td>Processes payment for in-app purchases</td><td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td></tr>
+    <tr><td>NHTSA vPIC API</td><td>VIN decode for year, make, and model (not an embedded SDK; a network request when you look up a VIN)</td><td><a href="https://www.nhtsa.gov/privacy-policy">nhtsa.gov/privacy-policy</a></td></tr>
   </tbody>
 </table>
 <p>These third parties are independent controllers of the data they collect and their policies govern their processing.</p>
-
-<!-- KEEP THIS SECTION ONLY IF THE APP DISPLAYS ADS (AdMob, AdColony, AdMob mediation, etc.). DELETE IT ENTIRELY IF THERE ARE NO ADS. -->
-<h2>6. Advertising</h2>
-<p>The App displays advertisements provided by third-party advertising networks. These networks may use advertising identifiers and collect data about your device and your interaction with ads to serve ads that are more relevant to you. You can opt out of personalized advertising as described in Section 4. If you opt out, you will still see ads, but they may be less relevant.</p>
 
 <h2>7. How We Share and Disclose Information</h2>
 <p>We do not sell your personal information. We share information only in the following circumstances:</p>
@@ -157,7 +129,7 @@
 <p>Information we collect may be stored and processed in the United States and in other countries where we or our service providers operate. If you are located in the EEA, the United Kingdom, or Switzerland, we rely on appropriate safeguards for transfers of personal data outside those regions, including the European Commission&#8217;s adequacy decisions and Standard Contractual Clauses, as applicable. You may request a copy of the relevant safeguards by contacting us.</p>
 
 <h2>9. Data Retention</h2>
-<p>We keep your personal information only as long as necessary for the purposes described in this policy: account data for as long as your account is active and afterward for the period required by applicable law; payment and transaction records for the period required by tax and accounting law; and logs, analytics, and crash data for shorter periods unless aggregated or pseudonymized. When data is no longer needed, we delete or anonymize it.</p>
+<p>We keep your personal information only as long as necessary for the purposes described in this policy: account data for as long as your account is active and afterward for the period required by applicable law; payment and transaction records for the period required by tax and accounting law; and logs, analytics, and crash data for shorter periods unless aggregated or anonymized. Garage records on your device remain until you delete them or uninstall the App. When data is no longer needed, we delete or anonymize it.</p>
 
 <h2>10. Your Privacy Rights</h2>
 
@@ -181,7 +153,6 @@
 
 <h2>11. Children&#8217;s Privacy</h2>
 <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided us personal information, contact us and we will delete it promptly.</p>
-<!-- IF THE APP IS DIRECTED AT CHILDREN (or knowingly collects from under-13s in the US / under-16 in the EEA), REPLACE the paragraph above with a section describing verifiable parental consent, what is collected, and how parents can review/delete their child's data. -->
 
 <h2>12. Data Security</h2>
 <p>We use reasonable technical and organizational measures to protect personal information, including encryption in transit, access controls, and secure storage. No method of transmission or storage is 100% secure, so while we work to protect your data, we cannot guarantee absolute security.</p>
@@ -189,9 +160,8 @@
 <h2>13. Data Breach Notification</h2>
 <p>If we experience a data breach that affects your personal information, we will notify you and the relevant authorities as required by applicable law, without undue delay.</p>
 
-<!-- KEEP THIS SECTION ONLY IF THE APP LETS USERS CREATE ACCOUNTS. (Apple REQUIRES an in-app account-deletion option whenever account creation is supported.) DELETE IT ENTIRELY IF THE APP HAS NO ACCOUNTS. -->
 <h2>14. Account Deletion</h2>
-<p>You can delete your account and its associated data at any time from inside the App ({{ACCOUNT_DELETION_PATH}}) or by emailing {{CONTACT_EMAIL}} with the subject &#8220;Delete account.&#8221; When you delete your account, we delete or anonymize your personal information within 30 days, except where we must retain it to comply with legal obligations (for example, records of purchases required by tax law).</p>
+<p>You can delete your account and its associated data at any time from inside the App (Settings → Delete account) or by emailing quizdue.dev@gmail.com with the subject &#8220;Delete account.&#8221; Deleting the account removes your cloud login. Garage records on the device are not wiped. When you delete your account, we delete or anonymize associated cloud personal information within 30 days, except where we must retain it to comply with legal obligations (for example, records of purchases required by tax law).</p>
 
 <h2>15. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the &#8220;Last updated&#8221; date above and, where appropriate, notify you in the App or by email before the changes take effect. Your continued use of the App after changes are posted constitutes acceptance of the revised policy.</p>
@@ -199,13 +169,13 @@
 <h2>16. Contact Us</h2>
 <div class="contact-box">
   <p style="margin:0">If you have questions, concerns, or requests regarding this Privacy Policy or your data, contact us at:</p>
-  <p style="margin:8px 0 0"><strong>{{CONTACT_EMAIL}}</strong></p>
-  <p style="margin:4px 0 0">{{DEVELOPER_ENTITY}}<br>{{DEVELOPER_ADDRESS}}</p>
+  <p style="margin:8px 0 0"><strong>quizdue.dev@gmail.com</strong></p>
+  <p style="margin:4px 0 0">The individual developer</p>
   <p style="margin:6px 0 0; font-size:.9rem; color:#4b5563">We aim to respond within 30 days.</p>
 </div>
 
 <footer>
-  {{APP_NAME}} — Privacy Policy · Effective {{EFFECTIVE_DATE}}
+  Classic Garage — Privacy Policy · Effective September 9, 2026
 </footer>
 
 </main>
